@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo List</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="h-screen w-screen bg-slate-800 flex justify-center items-center">
+    <main>
+      <div
+        id="container"
+        class="bg-black p-3 text-center min-w-[300px] mx-4 sm:min-w-[500px] sm:p-5 rounded-xl"
+      >
+        <h1 class="text-4xl font-bold text-white">To-Do List</h1>
+        <!-- div for input and button -->
+        <div class="grid grid-cols-[2fr_1fr] gap-3">
+          <form action="#">
+            <input
+              id="input_box"
+              class="w-full text-[18px] h-11 sm:text-xl px-3 focus:outline-none rounded-md bg-slate-800 text-white"
+              type="text"
+              placeholder="Add a new task..."
+            />
+          </form>
+          <button
+            id="add_Button"
+            class="bg-blue-600 text-white text-[18px] h-11 sm:text-xl font-semibold rounded-md hover:bg-blue-700 focus:outline-none"
+          >
+            Add Task
+          </button>
+        </div>
+        <!-- listBox starts -->
+        <div
+          id="listBox"
+          class="h-64 bg-transparent text-white overflow-y-auto no-scrollbar scroll-smooth"
+        >
+          <!-- element starts -->
+          <!-- <div
+            id="whole_item"
+            class="flex rounded-md justify-between items-center text-white text-[18px] sm:text-xl bg-slate-800 p-3 gap-3"
+          >
+            <div class="text-[18px] sm:text-xl text-left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <button
+              class="text-[18px] sm:text-xl bg-red-600 hover:bg-red-700 px-3 py-2 rounded-md focus:outline-none"
+            >
+              delete
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <script src="first.js"></script>
+  </body>
+</html>
